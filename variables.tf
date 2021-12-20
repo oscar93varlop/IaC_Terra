@@ -45,3 +45,9 @@ variable "az3"{
     type = string
     description = "Zona de disponiblidad para subnet3"
 }
+
+variable "sbnt1_private_ips"{
+    description = "Lista de UP para la subnet 1"
+    type = "list"
+    default = ["10.0.10.1", "10.0.10.2", "10.0.10.3"]
+}
