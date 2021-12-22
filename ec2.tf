@@ -11,7 +11,7 @@ resource "aws_instance" "server1" {
  iam_instance_profile = "cw-metrics"
  user_data = "${file("cw_rh.sh")}"
  tags = {
-     Name = "TFcourse"
-     Env = "testing"
+     Name = "TFcourse-${count.index + 1}"
+     Env = "test"
  }
 }
