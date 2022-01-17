@@ -8,3 +8,5 @@ cidr_sbnt3 = "10.0.30.0/24"
 az1 = "us-east-1a"
 az2 = "us-east-1b"
 az3 = "us-east-1c"
+az = ["us-east-1a", "us-east-1b", "us-east-1c"]
+cidr_sbnts = ["10.0.10.0/24", "10.0.20.0/24", "10.0.30.0/24"]

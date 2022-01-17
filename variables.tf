@@ -16,6 +16,11 @@ variable "ami_deb_id"{
     description = "amideb"
 }
 
+variable "cidr_sbnts"{
+    type = "list"
+    description = "bloque de direcciones ip para subnet 1"
+}
+
 variable "cidr_sbnt1"{
     type = string
     description = "bloque de direcciones ip para subnet 1"
@@ -29,6 +34,11 @@ variable "cidr_sbnt2"{
 variable "cidr_sbnt3"{
     type = string
     description = "bloque de direcciones ip para subnet 3"
+}
+
+variable "az"{
+    type = "list"
+    description = "Zona de disponiblidad para subnets"
 }
 
 variable "az1"{
@@ -51,3 +61,4 @@ variable "sbnt1_private_ips"{
     type = "list"
     default = ["10.0.10.11", "10.0.10.12", "10.0.10.13"]
 }
+data "aws_availability_zones" "data_azs" {}
